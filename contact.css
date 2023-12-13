@@ -1,0 +1,365 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    background-color:white;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px 1px 15px 0.5px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.yg-logo{
+    height: 140px;
+    width: 200px;
+    padding-left: 10px;  
+}
+.nav-btn{
+    font-size: 25px;
+    background-color: unset;
+    border: none;
+    padding: 10px; 
+}
+.overall-navbtn{
+    padding-right: 20px;  
+}
+.btn-border{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+ } 
+.nav-btn:hover{
+    background: linear-gradient(to bottom,#6b5333 , #e8dfce, #80540c);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.user-icon{
+    border: none;
+    background-color:unset;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+    color: black;
+    
+}
+.user-icon:hover{
+    background: linear-gradient(to bottom,#6b5333 , #e8dfce, #80540c);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.menu-icon{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#box{
+    display: none;
+ }
+ nav .menu-icon{
+     display: none;
+ }
+ 
+nav input:checked ~.resnav-btn{
+    background-color: white;
+    left: 0;
+    transition: 2s;
+}
+/* ------------------------media querry------------------------------- */
+@media screen and (max-width:800px) {
+    .resnav-btn{
+        position: fixed;
+        left: -100%;
+         top: 90px;
+         height: 90vh;
+         width: 75%;
+         display:grid;
+         flex-direction: column;
+         justify-content: center;
+      }
+      nav .menu-icon{
+        display: inline-block;
+    }
+    
+}
+@media screen and (min-width:320px) and (max-width:450px){
+    .resnav-btn{
+         top: 80px;
+    }
+    .yg-logo{
+        height: 100px;
+        width: 150px;
+    }
+    nav{
+        height: 80px;
+    }
+    .nav-btn{
+        font-size: 20px;
+         height: 50px;
+         width: 100px;
+    }
+    
+     .user-icon{
+        margin: auto;
+        display:grid;
+        justify-self: center;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+     } 
+}
+@media screen and (min-width:450px) and (max-width:800px){
+    .yg-logo{
+        height: 120px;
+        width: 170px;
+    }
+    .menu-icon{
+        padding: 7px 20px;
+    }
+    .user-icon{
+        margin: auto;
+        display:grid;
+        justify-self: center;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+     }
+     
+     .nav-btn{
+        font-size: 25px;
+         height: 60px;
+         width: 120px;
+    }
+}
+/* --------------------------------------------------------------navbar over----------------------------------- */
+/* ------------------------contact page first----------------------------- */
+.bg-img{
+    width: 100%;
+    height:  600px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    position: relative;
+    
+}
+
+.first-container{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+   height: 600px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contact-header h1{
+    text-align: center;
+    position: relative;
+    top:110px;
+    z-index: 5;
+    color: white;
+    font-size: 50px;
+     
+}
+.first-container-img{
+ height: 400px;
+ width: 400px;
+ border-radius: 10px;
+}
+.first-container-content{
+  color: white;
+
+}
+.first-container-content h2{
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+.first-container-content h3{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.map{
+    width: 100%;
+    height: 400px;
+}
+/* -----------------------third cotainer-icon--------------- */
+.icon-btn{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    border: none;
+}
+.overall-icons i{
+    font-size: 45px;
+}
+.overall-icons{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.callus-div h2{
+   padding: 25px 0;
+}
+.callus-div span{
+    color:blueviolet
+}
+.callus-div h4{
+    padding-bottom: 10px;
+}
+
+.callus-div{
+    width: 320px;
+}
+/* ----------------------- */
+.message-div h2{
+    padding: 25px 0;
+ }
+ .message-div span{
+     color:blueviolet
+ }
+ .message-div h4{
+     padding-bottom: 10px;
+ }
+ 
+ .message-div{
+     width: 320px;
+  }
+   /*-------------------------  */
+   .message-div h2{
+    padding: 25px 0;
+ }
+ .message-div span{
+     color:blueviolet
+ }
+ .message-div h4{
+     padding-bottom: 10px;
+ }
+ 
+ .message-div{
+     width: 320px;
+  }
+  /* ----------------- */
+  .mailus-div h2{
+    padding: 25px 0;
+ }
+ .mailus-div span{
+     color:blueviolet
+ }
+ .mailus-div h4{
+     padding-bottom: 10px;
+ }
+ 
+ .mailus-div{
+     width: 320px;
+  }
+  /* ------------------- */
+  .ygevent-div h2{
+    padding: 10px 0;
+ }
+ /* .mailus-div span{
+     color:blueviolet
+ } */
+ .ygevent-div h4{
+     padding-bottom: 10px;
+ }
+ 
+ .ygevent-div{
+     width: 320px;
+  }
+  
+  /* ------------------footter------------- */
+  footer{
+    min-height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: gray;
+    color: white;
+}
+.footercontent1{
+    padding-top: 60px;
+}
+.footercontent2{
+    padding-top: 60px;
+}
+.footercontent3{
+    padding-top: 60px;
+}
+.footer-corpoffice{
+    padding: 20px 0;
+}
+.footer-headoffice{
+    padding: 20px 0;
+}
+.footer-ourbranches{
+    padding: 20px 0;
+    display: flex;
+    gap: 40px;
+}
+.footer-callus{
+ border-left: 2px solid white;
+ padding-left: 15px;
+ margin-top:30px;
+}
+.footer-emailus{
+    border-left: 2px solid white;
+    padding-left: 15px;
+    margin-top:30px;
+}
+.footer-followus{
+    border-left: 2px solid white;
+ padding-left: 15px;
+}
+/* ----------------MEDIA QUERRY------------- */
+@media screen and (min-width:320px) and  (max-width:450px){
+    .contact-header  h1{
+        font-size: 30px;
+    }
+    .first-container-img{
+        height: 320px;
+        width: 320px;
+        border-radius: 10px;
+       }
+       .bg-img{
+        height: 1000px;
+       }
+       .first-container-content{
+        padding-top: 60px;
+        text-align: center;
+        font-size: 15px;
+       }
+       .icon-btn{
+        height: 60px;
+        width: 60px;
+     
+    }
+    .overall-icons i{
+        font-size: 35px;
+    }
+    .overall-icons h2{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:450px) and  (max-width:850px){
+    .contact-header  h1{
+        font-size: 35px;
+    }
+    .bg-img{
+        height: 1000px;
+       }
+       .first-container-content{
+        padding-top: 60px;
+       }
+}

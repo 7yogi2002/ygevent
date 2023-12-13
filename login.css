@@ -1,0 +1,236 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    background-color:white;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px 1px 15px 0.5px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.yg-logo{
+    height: 140px;
+    width: 200px;
+    padding-left: 10px;  
+}
+.nav-btn{
+    font-size: 25px;
+    background-color: unset;
+    border: none;
+    padding: 10px; 
+}
+.overall-navbtn{
+    padding-right: 20px;  
+}
+.btn-border{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+ } 
+.nav-btn:hover{
+    background: linear-gradient(to bottom,#6b5333 , #e8dfce, #80540c);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.user-icon{
+    border: none;
+    background-color: unset;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+    color: black;
+    
+}
+.user-icon:hover{
+    background: linear-gradient(to bottom,#6b5333 , #e8dfce, #80540c);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.menu-icon{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#box{
+    display: none;
+ }
+ nav .menu-icon{
+     display: none;
+ }
+ 
+nav input:checked ~.resnav-btn{
+    background-color: white;
+    left: 0;
+    transition: 2s;
+}
+/* ------------------------media querry------------------------------- */
+@media screen and (max-width:800px) {
+    .resnav-btn{
+        position: fixed;
+        left: -100%;
+         top: 90px;
+         height: 90vh;
+         width: 75%;
+         display:grid;
+         flex-direction: column;
+         justify-content: center;
+      }
+      nav .menu-icon{
+        display: inline-block;
+    }
+    
+}
+@media screen and (min-width:320px) and (max-width:450px){
+    .resnav-btn{
+         top: 80px;
+    }
+    .yg-logo{
+        height: 100px;
+        width: 150px;
+    }
+    nav{
+        height: 80px;
+    }
+    .nav-btn{
+        font-size: 20px;
+         height: 50px;
+         width: 100px;
+    }
+    
+     .user-icon{
+        display:grid;
+        justify-self: center;
+        margin: auto;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+     } 
+}
+@media screen and (min-width:450px) and (max-width:800px){
+    .yg-logo{
+        height: 120px;
+        width: 170px;
+    }
+    .menu-icon{
+        padding: 7px 20px;
+    }
+    .user-icon{
+        display:grid;
+        justify-self: center;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+        margin: auto;
+     }
+   
+     .nav-btn{
+        font-size: 25px;
+         height: 60px;
+         width: 120px;
+    }
+}
+/* --------------------------------------------------------------navbar over----------------------------------- */
+/* -----------------------login form------------------------ */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: url(./wallpaper2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 650px;
+    padding-bottom: 50px;
+}
+
+.container {
+    border-radius: 15px;
+    width: 450px;
+    padding: 40px 20px;
+    background-color: white;
+    box-shadow: 2px 2px 20px black;
+}
+
+.container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: auto;
+    color: #363062;
+    border-radius: 10px;
+    width: 170px;
+    text-align: center;
+}
+input {
+    width: 100%;
+    padding: 13px;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color:unset;
+    border-bottom: 2px solid black;
+}
+
+section {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    padding: 10px;
+    font-size: 19px;
+    top: 38px;
+    right: 2px;
+    color: #435585;
+}
+
+label {
+    font-size: 18px;
+    color: #0d6a78;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submit-but {
+    padding: 10px 60px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #363062;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.submit-but:hover{
+    background: linear-gradient(to bottom,#6b5333 , #e8dfce, #80540c);
+    color: black;
+    cursor: pointer;
+}
+@media screen and (min-width:320px) and  (max-width:450px){
+    .container{
+        width: 300px;
+    }
+    main{
+        background-image: unset;
+        background-color: blueviolet;
+    }
+}

@@ -1,0 +1,348 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    background-color:white;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px 1px 15px 0.5px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.yg-logo{
+    height: 140px;
+    width: 200px;
+    padding-left: 10px;  
+}
+.nav-btn{
+    font-size: 25px;
+    background-color: unset;
+    border: none;
+    padding: 10px; 
+}
+.overall-navbtn{
+    padding-right: 20px;  
+}
+.btn-border{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+ } 
+.nav-btn:hover{
+    background: linear-gradient(to bottom,#6b5333 , #e8dfce, #80540c);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.user-icon{
+    border: none;
+    background-color: unset;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+    color: black;
+    
+}
+.user-icon:hover{
+    background: linear-gradient(to bottom,#6b5333 , #e8dfce, #80540c);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.menu-icon{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#box{
+    display: none;
+ }
+ nav .menu-icon{
+     display: none;
+ }
+ 
+nav input:checked ~.resnav-btn{
+    background-color: white;
+    left: 0;
+    transition: 2s;
+}
+/* ------------------------media querry------------------------------- */
+@media screen and (max-width:800px) {
+    .resnav-btn{
+        position: fixed;
+        left: -100%;
+         top: 90px;
+         height: 90vh;
+         width: 75%;
+         display:grid;
+         flex-direction: column;
+         justify-content: center;
+      }
+      nav .menu-icon{
+        display: inline-block;
+    }
+    
+}
+@media screen and (min-width:320px) and (max-width:450px){
+    .resnav-btn{
+         top: 80px;
+    }
+    .yg-logo{
+        height: 100px;
+        width: 150px;
+    }
+    nav{
+        height: 80px;
+    }
+    .nav-btn{
+        font-size: 20px;
+         height: 50px;
+         width: 100px;
+    }
+   
+     .user-icon{
+        margin: auto;
+        display:grid;
+        justify-self: center; 
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+     } 
+}
+@media screen and (min-width:450px) and (max-width:800px){
+    .yg-logo{
+        height: 120px;
+        width: 170px;
+    }
+    .menu-icon{
+        padding: 7px 20px;
+    }
+    .user-icon{
+        display:grid;
+        justify-self: center;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+        margin: auto;
+     }
+   
+     .nav-btn{
+        font-size: 25px;
+         height: 60px;
+         width: 120px;
+    }
+}
+/* --------------------------------------------------------------navbar over----------------------------------- */
+/* ----------------------------------about us main page---------------------------- */
+.about-header{
+    padding-top: 120px;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.about-header h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 25px
+}
+.about-header p{
+   width: 900px;
+   font-size: 20px;
+   padding: 0 20px;
+}
+/* ----------------second contnt------------------------ */
+.second-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 50px;
+}
+.second-content-para{
+    line-height: 50px;
+}
+.second-content-para p{
+    font-size: 25px;
+}
+.second-content-img{
+    height: 400px;
+    width: 450px;
+    border-radius: 10px;
+}
+/* --------------------third content----------------------- */
+.third-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.third-content span{
+    font-weight: bold;
+}
+.third-content-para-one{
+    width: 500px;
+}
+.third-content-para-two{
+    width: 500px;
+}
+.third-content h2{
+  padding: 20px 0;
+}
+.third-content p{
+    line-height: 24px;
+    padding-bottom: 20px;
+  }
+  /* -------------------------fouth content-------------------- */
+  .fouth-content-img{
+    height: 400px;
+    width: 450px;
+    border-radius: 10px;
+  }
+  .fouth-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .fouth-content-para{
+    width: 500px;
+  }
+  .fouth-content h2{
+    padding-bottom: 20px;
+  }
+  .fouth-content p{
+    padding-bottom: 20px;
+    line-height: 25px;
+  }
+  /* --------------------------background image-------------- */
+  .bg-img{
+    background-image: url(./about-img3.jpg);
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-attachment: fixed;
+   
+  }
+
+  /* ------------------footter------------- */
+  footer{
+    min-height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: gray;
+    color: white;
+}
+.footercontent1{
+    padding-top: 60px;
+}
+.footercontent2{
+    padding-top: 60px;
+}
+.footercontent3{
+    padding-top: 60px;
+}
+.footer-corpoffice{
+    padding: 20px 0;
+}
+.footer-headoffice{
+    padding: 20px 0;
+}
+.footer-ourbranches{
+    padding: 20px 0;
+    display: flex;
+    gap: 40px;
+}
+.footer-callus{
+ border-left: 2px solid white;
+ padding-left: 15px;
+ margin-top:30px;
+}
+.footer-emailus{
+    border-left: 2px solid white;
+    padding-left: 15px;
+    margin-top:30px;
+}
+.footer-followus{
+    border-left: 2px solid white;
+ padding-left: 15px;
+}
+@media screen and (min-width:320px) and  (max-width:430px){
+    .about-header p{
+        width: 100%;
+       font-size: 18px;
+     }
+     /* ------------second---------------- */
+     .second-content-img{
+        height: 320px;
+        width: 320px;
+       
+    }
+    .second-content-para{
+        line-height: 25px;
+    }
+    .second-content-para p{
+        font-size: 18px;
+    }
+    /* ------------------third-------------------------- */
+    .third-content-para-one{
+        width: 320px;
+        padding: 0 10px;
+    }
+    .third-content-para-two{
+        width: 320px;
+        padding: 0 10px;
+    }
+    /* --------------------fouth--------------------------- */
+    .fouth-content-img{
+        height: 320px;
+        width: 320px;
+    }
+    .fouth-content-para{
+        width: 320px;
+        padding: 0 15px;
+      }
+      /* -----------------footer------------- */
+      .footer-followus{
+        padding-bottom: 30px;
+    }
+    
+
+}
+@media screen and  (max-width:910px){
+    .about-header p{
+        width: 100% 
+        }
+    }
+@media screen and (min-width:430px) and  (max-width:770px){
+    .about-header p{
+        width: 100% 
+     }
+     .second-content-para{
+        line-height: 25px;
+    }
+    .second-content-para p{
+        font-size: 20px;
+    }
+    .third-content-para-one{
+        
+        padding: 0 15px;
+    }
+    .third-content-para-two{
+      
+        padding: 0 15px;
+    }
+    .fouth-content-para{
+       
+        padding: 0 15px;
+      }
+}
